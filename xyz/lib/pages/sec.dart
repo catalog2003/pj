@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:xyz/pages/third.dart';
+
+
+
+
+
 
 class SecPage extends StatelessWidget {
+  const SecPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Get screen size
@@ -62,7 +70,7 @@ class SecPage extends StatelessWidget {
                 Container(
                   width: size.width * 0.03,
                   height: size.width * 0.03,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                      color: Color(0xFFD9D9D9),
                   ),
@@ -72,7 +80,7 @@ class SecPage extends StatelessWidget {
                 Container(
                   width: size.width * 0.03,
                   height: size.width * 0.03,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                    
                       color: Color(0xFF407BFF),
@@ -118,11 +126,16 @@ class SecPage extends StatelessWidget {
     height: size.height * 0.06,
     child: ElevatedButton(
       onPressed: () {
-        // Handle "Next" button press
-        print("Next button pressed");
-      },
+                // Action on button click
+                 // Navigate to FirstPage
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ThirdPage()),
+                );
+                // Navigate to another page or perform an action here.
+              },
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xff16182c), // Button background color
+        backgroundColor: const Color(0xff16182c), // Button background color
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(size.width * 0.04),
         ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'first.dart'; // Import the FirstPage
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Get the screen size
@@ -13,7 +15,7 @@ class HomePage extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            color: Color(0xFF2E481E),
+            color: const Color(0xFF2E481E),
           ),
           // Vector wmremove_tr
           Positioned(
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
             child: Container(
               width: size.width * 1,  // Responsive width
               height: size.height * 0.65,  // Responsive height
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/uiui.png'),
                   fit: BoxFit.cover,
@@ -37,7 +39,7 @@ class HomePage extends StatelessWidget {
             child: Container(
               width: size.width ,  // Responsive width
               height: size.height ,  // Responsive height
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/po.png'),  // Use your image
                   fit: BoxFit.cover,
@@ -69,7 +71,7 @@ class HomePage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: size.width * 0.04,  // Responsive font size
-                color: Color(0xFF91A37F),
+                color: const Color(0xFF91A37F),
                 fontFamily: 'Lexend',
                 height: 1.25,
               ),
@@ -90,7 +92,7 @@ class HomePage extends StatelessWidget {
                 // Navigate to another page or perform an action here.
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF569033),  // Correct button background color
+                backgroundColor: const Color(0xFF569033),  // Correct button background color
                 padding: EdgeInsets.symmetric(
                   horizontal: size.width * 0.07,
                   vertical: size.height * 0.015,

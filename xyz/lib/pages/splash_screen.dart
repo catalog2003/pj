@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:xyz/pages/home_page.dart'; // Import your home page.
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -15,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   // Delay and navigate to home page
   Future<void> _navigateToHome() async {
-    await Future.delayed(Duration(seconds: 3)); // Show splash screen for 3 seconds.
+    await Future.delayed(const Duration(seconds: 3)); // Show splash screen for 3 seconds.
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => HomePage()), // Replace with your home page.
@@ -30,8 +32,8 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/splash_logo.png'), // Add your splash screen logo image.
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Your App Name',
               style: TextStyle(
                 fontSize: 24,

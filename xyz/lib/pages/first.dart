@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'sec.dart';
 class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Get screen size
@@ -62,7 +64,7 @@ class FirstPage extends StatelessWidget {
                 Container(
                   width: size.width * 0.03,
                   height: size.width * 0.03,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Color(0xFF407BFF),
                   ),
@@ -72,7 +74,7 @@ class FirstPage extends StatelessWidget {
                 Container(
                   width: size.width * 0.03,
                   height: size.width * 0.03,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Color(0xFFD9D9D9),
                   ),
@@ -126,7 +128,7 @@ class FirstPage extends StatelessWidget {
                 // Navigate to another page or perform an action here.
               },
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xff16182c), // Button background color
+        backgroundColor: const Color(0xff16182c), // Button background color
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(size.width * 0.04),
         ),
