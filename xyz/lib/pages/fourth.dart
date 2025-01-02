@@ -18,7 +18,7 @@ class _FourthPageState extends State<FourthPage> {
   String detailedResponse = '';   
 
   Future<String> _getChatGptResponse(String prompt) async {   
-    const String apiKey = "2jubX6kMzzdjr8vpidh8tyuD4lAf6CjRwrrqMuhI7HxiiFv61eKyJQQJ99ALACYeBjFXJ3w3AAABACOGFlCt";   
+    const String apiKey = //"2jubX6kMzzdjr8vpidh8tyuD4lAf6CjRwrrqMuhI7HxiiFv61eKyJQQJ99ALACYeBjFXJ3w3AAABACOGFlCt";   
     const String endpoint = "https://cropai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-08-01-preview";   
 
     Map<String, String> headers = {   
