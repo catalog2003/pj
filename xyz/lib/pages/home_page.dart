@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
               height: size.height * 0.65,  // Responsive height
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/uiui.png'),
+                  image: AssetImage('assets/img1.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
               height: size.height ,  // Responsive height
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/po.png'),  // Use your image
+                  image: AssetImage('assets/vector1.png'),  // Use your image
                   fit: BoxFit.cover,
                 ),
               ),

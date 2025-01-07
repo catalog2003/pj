@@ -17,17 +17,17 @@ class FirstPage extends StatelessWidget {
             top: -size.height * 0.065,
             left: -size.width * 0.4 ,
             child: Image.asset(
-              "assets/Ellipse 12.png",
+              "assets/Ellipse3.png",
               width: size.width * 0.8,
               height: size.width * 0.8,
             ),
             ),
-          // Positioned Ellipse 6 Image
+          // Positioned Ellipse 3 Image
           Positioned(
             top: size.height * 0.5,
             left: size.width * -0.2,
             child: Image.asset(
-              "assets/Ellipse 6.png",
+              "assets/Ellipse1.png",
               width: size.width * 0.8,
               height: size.height * 0.8,
             ),
@@ -42,12 +42,12 @@ class FirstPage extends StatelessWidget {
               height: size.height * 1,
             ),
           ),
-          // Positioned Ellipse 7 Image
+          // Positioned Ellipse 2 Image
           Positioned(
             top: size.height * 0.1,
             left: size.width * 0.6,
             child: Image.asset(
-              "assets/Ellipse 7.png",
+              "assets/Ellipse2.png",
               width: size.width * 0.9,
               height: size.height * 0.9,
             ),
@@ -57,7 +57,7 @@ class FirstPage extends StatelessWidget {
           // Positioned Circles
           Positioned(
             top: size.height * 0.64,
-            left: size.width * 0.5,
+            left: (size.width - (size.width * 0.06 + size.width * 0.03)) / 2,
             child: Row(
               children: [
                 // Circle 1
@@ -85,7 +85,7 @@ class FirstPage extends StatelessWidget {
           // Positioned Welcome Text
           Positioned(
             top: size.height * 0.7,
-            left: size.width * 0.35,
+            left: (size.width - size.width * 0.3) / 2,
             child: Text(
               "Welcome",
               style: TextStyle(
@@ -97,7 +97,7 @@ class FirstPage extends StatelessWidget {
           // Positioned Description Text
           Positioned(
             top: size.height * 0.76,
-            left: size.width * 0.1,
+            left: (size.width - size.width * 0.8) / 2,
             child: SizedBox(
               width: size.width * 0.8,
               child: Text(
@@ -113,7 +113,7 @@ class FirstPage extends StatelessWidget {
           // Positioned Next Button
        Positioned(
   top: size.height * 0.8,
-  left: size.width * 0.38,
+  left: (size.width - size.width * 0.3) / 2,
   child: SizedBox(
     width: size.width * 0.3,
     height: size.height * 0.06,

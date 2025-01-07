@@ -30,17 +30,21 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset('assets/splash_logo.png'), // Add your splash screen logo image.
+            children: [
+            Image.asset(
+              'assets/splash_logo.png', // Add your splash screen logo image.
+              width: 250, // Set the desired width.
+              height: 250, // Set the desired height.
+            ),
             const SizedBox(height: 20),
             const Text(
               'Your App Name',
               style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
               ),
             ),
-          ],
+            ],
         ),
       ),
     );

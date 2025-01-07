@@ -58,12 +58,12 @@ flutter:
   uses-material-design: true
   assets:
     - assets/splash_logo.png
-    - assets/uiui.png
-    - assets/po.png
+    - assets/img1.jpg
+    - assets/vector1.png
     - assets/1.png
-    - assets/Ellipse 6.png
-    - assets/Ellipse 7.png
-    - assets/Ellipse 12.png
+    - assets/Ellipse1.png
+    - assets/Ellipse2.png
+    - assets/Ellipse3.png
     - assets/2.png
 
   # The following line ensures that the Material Icons font is
